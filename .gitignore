@@ -1,0 +1,19 @@
+# A base de dados NÃO pode ser compartilhada publicamente
+data/
+*.zip
+*.ods
+
+# Modelos treinados: sobem só os que NÃO guardam os pacientes de treino.
+# knn.joblib e ensemble.joblib contêm a base de treino e ficam fora.
+artifacts/*
+!artifacts/neural_network.joblib
+!artifacts/random_forest.joblib
+!artifacts/decision_tree.joblib
+
+# Gerados pela execução
+__pycache__/
+*.pyc
+.venv/
+
+# Arquivos extras
+docs/Material_de_Estudo_Apresentacao.pdf

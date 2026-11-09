@@ -1,0 +1,47 @@
+{
+  "modelo": "knn",
+  "melhores_hiperparametros": {
+    "modelo__n_neighbors": "61",
+    "modelo__p": "2",
+    "modelo__weights": "distance",
+    "prep__colunas__num__imputar__add_indicator": "False"
+  },
+  "validacao_cruzada": {
+    "f1_macro": {
+      "media": 0.9018876746179822,
+      "desvio": 0.0072100932856768085
+    },
+    "precisao_macro": {
+      "media": 0.9028643895874751,
+      "desvio": 0.007651550499327675
+    },
+    "precisao_diabetes": {
+      "media": 0.9299631463615926,
+      "desvio": 0.01810590372838886
+    },
+    "recall_diabetes": {
+      "media": 0.8777777777777777,
+      "desvio": 0.014814814814814791
+    },
+    "recall_controle": {
+      "media": 0.9279999999999999,
+      "desvio": 0.02039607805437111
+    },
+    "acuracia": {
+      "media": 0.901923076923077,
+      "desvio": 0.007195494974565246
+    }
+  },
+  "validacao_aninhada": null,
+  "matriz_confusao": [
+    [
+      232,
+      18
+    ],
+    [
+      33,
+      237
+    ]
+  ],
+  "n_treino": 520
+}

@@ -1,0 +1,45 @@
+{
+  "modelo": "ensemble",
+  "melhores_hiperparametros": {
+    "modelo__limiar": "0.5",
+    "modelo__weights": "[2, 2, 1]"
+  },
+  "validacao_cruzada": {
+    "f1_macro": {
+      "media": 0.9230690980014817,
+      "desvio": 0.018243347712525906
+    },
+    "precisao_macro": {
+      "media": 0.9238373760082972,
+      "desvio": 0.01832782883224904
+    },
+    "precisao_diabetes": {
+      "media": 0.9528567119155354,
+      "desvio": 0.019892358815053437
+    },
+    "recall_diabetes": {
+      "media": 0.8962962962962961,
+      "desvio": 0.018885257457751076
+    },
+    "recall_controle": {
+      "media": 0.952,
+      "desvio": 0.02039607805437112
+    },
+    "acuracia": {
+      "media": 0.9230769230769231,
+      "desvio": 0.018243909577894478
+    }
+  },
+  "validacao_aninhada": null,
+  "matriz_confusao": [
+    [
+      238,
+      12
+    ],
+    [
+      28,
+      242
+    ]
+  ],
+  "n_treino": 520
+}

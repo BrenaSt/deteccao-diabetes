@@ -1,0 +1,31 @@
+Profundidade: 4 | Folhas: 8
+
+IMPORTÂNCIA DAS VARIÁVEIS
+  HEMOGLOBIN                          0.6168
+  GLUCOSE                             0.3201
+  TRIGLYCERIDES                       0.0496
+  WEIGHT                              0.0136
+
+ÁRVORE (unidades reais; TRIGLYCERIDES em log(1 + x))
+|--- HEMOGLOBIN <= 6.38
+|   |--- GLUCOSE <= 120.50
+|   |   |--- TRIGLYCERIDES <= 5.39
+|   |   |   |--- HEMOGLOBIN <= 5.42
+|   |   |   |   |--- class: 0
+|   |   |   |--- HEMOGLOBIN >  5.42
+|   |   |   |   |--- class: 0
+|   |   |--- TRIGLYCERIDES >  5.39
+|   |   |   |--- HEMOGLOBIN <= 5.90
+|   |   |   |   |--- class: 0
+|   |   |   |--- HEMOGLOBIN >  5.90
+|   |   |   |   |--- class: 1
+|   |--- GLUCOSE >  120.50
+|   |   |--- GLUCOSE <= 142.00
+|   |   |   |--- WEIGHT <= 83.95
+|   |   |   |   |--- class: 0
+|   |   |   |--- WEIGHT >  83.95
+|   |   |   |   |--- class: 1
+|   |   |--- GLUCOSE >  142.00
+|   |   |   |--- class: 1
+|--- HEMOGLOBIN >  6.38
+|   |--- class: 1
