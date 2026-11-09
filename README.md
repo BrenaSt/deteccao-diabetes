@@ -66,8 +66,8 @@ No Windows, instale pelos sites oficiais: python.org e git-scm.com.
 ### 2. Baixar o projeto (git clone)
 
 ```bash
-git clone <LINK_DO_REPOSITORIO>
-cd <NOME_DA_PASTA_DO_REPOSITORIO>
+git clone https://github.com/BrenaSt/deteccao-diabetes
+cd deteccao-diabetes
 ```
 
 ### 3. Criar o ambiente virtual e instalar as dependências
